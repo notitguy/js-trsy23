@@ -1,9 +1,12 @@
-const str = "developer";
+function first() {
+  const x = 100;
 
-x = str.charAt(0).toUpperCase() + str.slice(1, 9);
-// x = str.charAt(0).toUpperCase() + str;
+  function second() {
+    const y = 200;
+  }
+  console.log(x + y);
 
-console.log(x);
-console.log(typeof x);
+  second();
+}
 
-// https://youtu.be/BI1o2H9z9fo?t=7250
+first();
