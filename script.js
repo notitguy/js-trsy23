@@ -1,12 +1,9 @@
-function first() {
-  const x = 100;
+const d = new Date();
 
-  function second() {
-    const y = 200;
-  }
-  console.log(x + y);
+// const hour = d.getHours();
 
-  second();
-}
+const locale = d.toLocaleString("cs-CZ", { month: "long" });
 
-first();
+console.log(locale);
+
+// Switch statements
