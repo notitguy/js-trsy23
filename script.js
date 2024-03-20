@@ -1,9 +1,14 @@
-const d = new Date();
+function removeItem(itemNumber) {
+  const ul = document.querySelector("ul");
+  const li = document.querySelector(`li:nth-child(${itemNumber})`);
 
-// const hour = d.getHours();
+  if (itemNumber > ul.children.length || itemNumber <= 0) {
+    console.log("Item doesn't exist");
+  } else {
+    ul.removeChild(li);
+  }
+}
 
-const locale = d.toLocaleString("cs-CZ", { month: "long" });
+removeItem(2);
 
-console.log(locale);
-
-// Switch statements
+// Events
