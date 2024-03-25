@@ -1,16 +1,12 @@
-const button = document.querySelector('button');
-const list = document.querySelector('ul');
-const listItems = document.querySelectorAll('li');
+// const list = document.querySelector("ul");
+// const button = document.querySelector("button");
 
-function clearBtn() {
-  
-  const defaultListItem = document.createElement('li');
-  defaultListItem.textContent = 'Empty list';
+// list.addEventListener("click", (e) => {
+//   e.target.remove();
+// });
 
-  listItems.forEach(item => {
-    item.remove();
-    list.insertAdjacentElement('afterbegin', defaultListItem);
-  });
-}
+// button.addEventListener("click", () => {
+//   document.location.reload();
+// });
 
-button.addEventListener('click', clearBtn);
+// 95
